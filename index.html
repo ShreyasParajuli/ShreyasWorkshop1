@@ -2,97 +2,162 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>WORKSHOP 1 - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreyas Parajuli - Portfolio</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
-
 <body>
     <header>
-        <h1>PORTFOLIO</h1>
+        <h1>Shreyas Parajuli</h1>
+        <img src="images/imageShreyas.jpeg" alt="Shreyas Parajuli" class="header-photo">
         <nav>
             <ul>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about">
+    <section id="about" class="section-light">
         <h2>About Me</h2>
-        <p>Short introduction about yourself.</p>
-        <img src="../images/imageShreyas.jpeg" alt="Shreyas Parajuli">
+        <p>
+            I’m a Cybersecurity student at the University of Wolverhampton, focused on understanding the evolving digital threat landscape and its global impact. I work on building strong fundamentals in security, critical thinking, and the interdisciplinary challenges of modern cyber risks. I also bring prior experience in business development and marketing, which complements my technical expertise with strategic and organizational insights.
+        </p>
+        <p>
+            I’m particularly interested in how fintech and edtech innovations introduce both opportunities and vulnerabilities, and how cybersecurity connects with governance, policy, and strategic decision-making.
+        </p>
+        <p> <br>
+            <b>Focus Areas:</b><br>
+            • Cybersecurity fundamentals: threats, secure design, risk mitigation<br>
+            • Technology & society: security implications of fintech/edtech<br>
+            • Strategy & policy: cyber governance and resilience frameworks
+        </p>
+        <p>
+            With curiosity and humility, I continually learn through research, case studies, and insights from industry professionals. My goal is to help build secure, scalable, and future-ready systems while connecting with mentors and experts shaping the cybersecurity field.
+        </p>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="section-dark">
         <h2>Skills</h2>
-        <ul>
-            <li>Technical Skill 1</li>
-            <li>Technical Skill 2</li>
-            <li>Technical Skill 3</li>
+        <ul class="skills-list">
+            <li>Vulnerability Assessment & Penetration Testing (VAPT)</li>
+            <li>AWS, Azure & GCP Cloud Platforms</li>
+            <li>Kali Linux, Burp Suite, Nmap, Wireshark</li>
+            <li>Python Scripting</li>
+            <li>Network Security & Threat Analysis</li>
+            <li>Windows & Linux Server Management</li>
         </ul>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-
-        <article>
-            <h3>Project Title 1</h3>
-            <p>Short description of project 1.</p>
-            <a href="#">View Project</a>
-        </article>
-
-        <article>
-            <h3>Project Title 2</h3>
-            <p>Short description of project 2.</p>
-            <a href="#">View Project</a>
-        </article>
-
-        <article>
-            <h3>Project Title 3</h3>
-            <p>Short description of project 3.</p>
-            <a href="#">View Project</a>
-        </article>
-    </section>
-
-    <section id="experience">
+    <section id="experience" class="section-light">
         <h2>Experience</h2>
-        <ul>
-            <li>
-                <h3>Job Title / Position</h3>
-                <p>Organization Name</p>
-                <p>Duration: 20XX - 20XX</p>
+        <ul class="experience-list">
+            <li class="experience-item">
+                <h3>Business Development Officer</h3>
+                <p><b>Kangaroo Education Foundation</b></p>
+                <p>May 2024 – May 2025</p>
+                <ul>
+                    <li>Led business development initiatives, contributing to the growth of student enrollments and partner engagement.</li>
+                    <li>Conducted market research, strengthened institutional partnerships, and supported operational decision-making.</li>
+                    <li>Collaborated with cross-functional teams to enhance service delivery and client experience.</li>
+                </ul>
             </li>
-            <li>
-                <h3>Job Title / Position</h3>
-                <p>Organization Name</p>
-                <p>Duration: 20XX - 20XX</p>
+            <li class="experience-item">
+                <h3>Marketing Officer</h3>
+                <p><b>Kangaroo Education Foundation</b></p>
+                <p>May 2024 – Dec 2024 (Promoted)</p>
+                <ul>
+                    <li>Executed marketing strategies across digital and offline channels to increase brand visibility.</li>
+                    <li>Managed student inquiries, consultations, and follow-ups to support admissions.</li>
+                    <li>Coordinated marketing campaigns, events, and promotional activities for lead generation.</li>
+                    <li>Designed campaign posters and social media posts using Adobe Photoshop and Illustrator.</li>
+                </ul>
             </li>
         </ul>
     </section>
 
-    <section id="contact">
+    <!-- NEW PROJECTS SECTION -->
+    <section id="projects" class="section-light">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Vulnerable Web Application Lab</h3>
+                <p><strong>Tech Stack:</strong> PHP, MySQL, Apache, Docker<br>
+                   <strong>Status:</strong> <em>Under Development</em></p>
+                <ul>
+                    <li>Deployed Damn Vulnerable Web Application (DVWA) in isolated Docker environment</li>
+                    <li>Practicing SQL Injection, XSS, CSRF, File Inclusion, and Command Injection</li>
+                    <li>Documenting exploitation techniques and implementing secure fixes</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <h3>Automated Network Vulnerability Scanner</h3>
+                <p><strong>Tech Stack:</strong> Python, Scapy, Nmap, Schedule, ReportLab<br>
+                   <strong>Status:</strong> <em>Under Development</em></p>
+                <ul>
+                    <li>Building custom port scanner with service detection and banner grabbing</li>
+                    <li>Integrating vulnerability checks using NSE scripts</li>
+                    <li>Generating automated PDF/HTML reports with risk ratings</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <h3>Personal SIEM using ELK Stack</h3>
+                <p><strong>Tech Stack:</strong> Elasticsearch, Logstash, Kibana, Beats, Docker<br>
+                   <strong>Status:</strong> <em>Under Development</em></p>
+                <ul>
+                    <li>Centralized logging from Windows and Linux lab machines</li>
+                    <li>Creating detection dashboards for brute force, lateral movement, and malware</li>
+                    <li>Writing custom detection rules using KQL and Elasticsearch DSL</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <h3>AWS Cloud Security Posture Checker</h3>
+                <p><strong>Tech Stack:</strong> Python (boto3), AWS CLI, Terraform, GitHub Actions<br>
+                   <strong>Status:</strong> <em>Under Development</em></p>
+                <ul>
+                    <li>Script to detect public S3 buckets, open security groups, and weak IAM policies</li>
+                    <li>Automated remediation suggestions and Terraform templates</li>
+                    <li>Scheduled scans via GitHub Actions</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section-light">
+        <h2>Education</h2>
+        <ul class="education-list">
+            <li>
+                <h3>BSc (Hons) Cybersecurity</h3>
+                <p><b>University of Wolverhampton</b></p>
+                <p>2024 – 2027 (Expected Graduation)</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact" class="section-dark">
         <h2>Contact</h2>
-        <p>Email: your-email@example.com</p>
+        <p>Email: shreyasparajuli2@gmail.com</p>
         <p>Phone: +977-9813977030</p>
         <form>
             <label>Name:</label><br>
-            <input type="text"><br>
-
+            <input type="text" required><br>
             <label>Email:</label><br>
-            <input type="email"><br>
-
+            <input type="email" required><br>
             <label>Message:</label><br>
-            <textarea></textarea><br>
-
-            <button type="submit">Send</button>
+            <textarea required></textarea><br>
+            <button type="submit" class="btn">Send Message</button>
         </form>
     </section>
 
     <footer>
-        <p>© 2025 Shreyas Parajuli. All Rights Reserved.</p>
+        <p>&copy 2025 Shreyas Parajuli. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
